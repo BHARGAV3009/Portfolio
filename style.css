@@ -524,47 +524,28 @@ body {
     }
 }
 
-/* @media (max-width: 480px) {
-    #nav {
-        height: auto;
-        padding: 0.6rem 4vw;
-        row-gap: 0.3rem;
-    }
-
-    .section {
-        padding: 4.5rem 6vw 4rem 6vw;
-    }
-
-    .section-heading h2 {
-        font-size: 1.7rem;
-    }
-
-    .section-heading p {
-        font-size: 0.8rem;
-    }
-
-    .contact-form {
-        padding: 1.2rem 1.3rem;
-    }
-} */
-
-/* --- MOBILE FIX: remove side gap & horizontal scroll --- */
 @media (max-width: 480px) {
   body {
-    overflow-x: hidden;          /* no horizontal scroll */
+    overflow-x: hidden;
   }
 
   #home,
   #hero {
-    width: 100vw;                /* always full viewport width */
+    width: 100vw;
     padding-left: 6vw;
-    padding-right: 6vw;          /* balanced padding on both sides */
+    padding-right: 6vw;
   }
 
   .row {
     width: 100%;
     padding-left: 0;
-    padding-right: 0;            /* avoid extra right padding */
+    padding-right: 0;
+  }
+
+  .row h1 {
+    font-size: 12vw;
+    margin-top: 1rem;
+    margin-bottom: -3rem;
   }
 
   .row .text {
@@ -576,7 +557,8 @@ body {
 
   #Visual svg {
     max-width: 50%;
-    height: auto;                /* make sure SVG never exceeds screen */
+    height: auto;
   }
 }
+
 
